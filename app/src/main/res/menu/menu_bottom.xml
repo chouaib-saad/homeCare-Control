@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/control_butt"
+        android:title="Control"
+        android:icon="@drawable/ic_control"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/stats_butt"
+        android:title="Stats"
+        android:icon="@drawable/ic_stats"/>
+
+    <item
+        android:id="@+id/settings_butt"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+
+
+</menu>

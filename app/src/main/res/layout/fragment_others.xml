@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".control_fragments.Others_frag"
+    android:background="@color/colorNeumorphisme1">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:constraint_referenced_ids="card1,card2,card3,card4,card5,add_new_device"
+            app:flow_maxElementsWrap="2"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card1"
+            android:layout_width="145dp"
+            android:layout_height="163dp"
+            app:neumorph_shapeType="flat"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:id="@+id/device_image1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/lampe_circle1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/device_circle"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/lampe_im1"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:tint="@color/red"
+                                android:src="@drawable/lamp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Lamp 1"
+                        android:layout_marginStart="2dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_Gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="2.1dp"
+                    android:weightSum="2"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/switch_txt1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="OFF"
+                        android:textSize="11sp"
+                        android:textColor="@color/red"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        />
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_btn1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/thumb"
+                        android:gravity="center_vertical"
+                        android:checked="true"
+                        app:track="@drawable/track"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card2"
+            android:layout_width="145dp"
+            android:layout_height="163dp"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/lampe_circle2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/device_circle"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/lampe_im2"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:tint="@color/red"
+                                android:src="@drawable/lamp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Lamp 2"
+                        android:layout_marginStart="2dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_Gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="2.1dp"
+                    android:weightSum="2"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/switch_txt2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="OFF"
+                        android:textColor="@color/red"
+                        android:textSize="11sp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_btn2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/thumb"
+                        android:gravity="center_vertical"
+                        app:track="@drawable/track"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card3"
+            android:layout_width="145dp"
+            android:layout_height="163dp"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/lampe_circle3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/device_circle"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/lampe_im3"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:tint="@color/red"
+                                android:src="@drawable/lamp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Lamp 3"
+                        android:layout_marginStart="2dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_Gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="2.1dp"
+                    android:weightSum="2"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/switch_txt3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="OFF"
+                        android:textColor="@color/red"
+                        android:textSize="11sp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_btn3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/thumb"
+                        android:gravity="center_vertical"
+                        app:track="@drawable/track"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card4"
+            android:layout_width="145dp"
+            android:layout_height="163dp"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/door_circle"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/device_circle"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/door_im"
+                                android:layout_width="21dp"
+                                android:layout_height="24dp"
+                                app:tint="@color/red"
+                                android:src="@drawable/ic_door" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Door"
+                        android:layout_marginStart="2dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_Gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="2.1dp"
+                    android:weightSum="2"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/switch_txt4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="OFF"
+                        android:textSize="11sp"
+                        android:textColor="@color/red"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_btn4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/thumb"
+                        android:gravity="center_vertical"
+                        app:track="@drawable/track"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card5"
+            android:layout_width="145dp"
+            android:layout_height="163dp"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="2">
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+
+                        <LinearLayout
+                            android:id="@+id/garage_circle"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/device_circle"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:id="@+id/garage_im"
+                                android:layout_width="23dp"
+                                android:layout_height="24dp"
+                                app:tint="@color/red"
+                                android:src="@drawable/ic_garage" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="center_vertical"
+                        android:text="Garage"
+                        android:layout_marginStart="2dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darker_Gray"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="2.1dp"
+                    android:weightSum="2"
+                    android:layout_weight="2"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/switch_txt5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="OFF"
+                        android:textColor="@color/red"
+                        android:textSize="11sp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch_btn5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:thumb="@drawable/thumb"
+                        android:gravity="center_vertical"
+                        app:track="@drawable/track"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/add_new_device"
+            android:layout_width="145dp"
+            android:layout_height="150dp"
+            app:neumorph_shadowElevation="4dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorNeumorphisme1"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/add_icon"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_add"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/deviceName6"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="ADD NEW DEVICE"
+                    android:textColor="@color/darker_Gray"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

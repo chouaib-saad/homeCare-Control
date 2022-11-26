@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen"
+    android:background="@color/bgBlue"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="0dp"
+        android:layout_height="225dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/firstsclogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_gl" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/logo_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+
+    <TextView
+        android:id="@+id/logo_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\nhomecare app"
+        android:textColor="@color/myCustomWhite"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/logo_image"
+        app:layout_constraintStart_toStartOf="@+id/logo_image"
+        app:layout_constraintTop_toBottomOf="@id/txt_gl" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/txt_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text=" you can make your family  life\n easier now"
+        android:textColor="@color/myCustomWhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_txt" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/butt_gl"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bgmiddle_code"
+        android:elevation="5dp"
+        android:onClick="login_signup"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's get Started !"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/btn_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/butt_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

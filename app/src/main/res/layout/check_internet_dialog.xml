@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="365dp"
+    android:layout_height="240dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:padding="8dp"
+    app:cardCornerRadius="8dp"
+    android:theme="@style/getStartedTheme"
+    android:animateLayoutChanges="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:animateLayoutChanges="true">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:elevation="5dp"
+        app:lottie_loop="true"
+        app:lottie_speed="1"
+        android:gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/no_connection"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="OOPS!"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/bgBlue"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:text="You're offline please check your network connection"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="@color/bgBlue"
+        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/retry_btn"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/login_btn_selector"
+        android:elevation="5dp"
+        android:layout_marginVertical="16dp">
+
+        <ImageView
+            android:id="@+id/retry_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_txt"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_try_again"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRY AGAIN"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/bgBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/progressbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="18dp"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="status_bar_color">#292480</color>
+    <color name="customBlue">#292480</color>
+    <color name="myCustomWhite">#C4FFFFFF</color>
+    <color name="myCustomWhite2">#7AFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="bgBlue">#41348A</color>
+
+    <color name="btn_white">#AEFFFFFF</color>
+
+    <color name="yellow">#FFC020</color>
+    <color name="customBlack">#221F1F</color>
+
+
+    <color name="darker_Gray">#C9404040</color>
+
+
+<!--    code pin colors-->
+    <color name="green">#CE15AA15</color>
+    <color name="red">#DDFF2600</color>
+
+
+
+
+
+
+
+    special white
+    <color name="special_white">#EBFCFB</color>
+    <color name="greey">#828282</color>
+
+
+    <color name="special_blue">#4B41348A</color>
+<!--    <color name="alertdlg_color2">#B741348A</color>-->
+
+
+
+
+    <color name="colorNeumorphisme1">#efeeee</color>
+
+
+<!--    <color name="off_gray">#b0b4c6</color>-->
+    <color name="off_gray">#dedbda</color>
+<!--    <color name="off_gray">#dad7d6</color>-->
+
+
+
+    <color name="switch_button_greey">#8c8c8c</color>
+
+
+
+
+
+
+    <color name="black_200">#aaaaaa</color>
+    <color name="black_500">#303231</color>
+    <color name="black_700">#FF000000</color>
+    <color name="orange_200">#ff8e4b</color>
+    <color name="orange_500">#ffff694a</color>
+    <color name="plum_700">#1D1D27</color>
+    <color name="custom_black">#FC221F1F</color>
+
+    <!--    <color name="purple_500">#663399</color>-->
+<!--    <color name="teal_200">#ff3cecb3</color>-->
+<!--    <color name="teal_500">#ff43d7dc</color>-->
+<!--    <color name="white">#FFFFFFFF</color>-->
+
+
+</resources>
+
+
+<!--<resources>-->
+<!--<color name="purple_200">#FFFFFF</color>-->
+<!--<color name="purple_500">#FFFFFF</color>-->
+<!--<color name="purple_700">#fab</color>-->
+<!--<color name="teal_200">#FFFFFF</color>-->
+<!--<color name="teal_700">#fab</color>-->
+<!--<color name="black">#FFFFFF</color>-->
+<!--<color name="white">#fab</color>-->
+<!--<color name="status_bar_color">#FFFFFF</color>-->
+<!--<color name="customBlue">#FFFFFF</color>-->
+<!--<color name="myCustomWhite">#FFFFFF</color>-->
+<!--<color name="myCustomWhite2">#FFFFFF</color>-->
+<!--<color name="transparent">#FFFFFF</color>-->
+<!--<color name="green">#FFFFFF</color>-->
+<!--<color name="red">#FFFFFF</color>-->
+<!--</resources>-->
+
+
+

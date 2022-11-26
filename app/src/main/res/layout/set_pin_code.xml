@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlue"
+    tools:context=".setPinCode"
+    android:animateLayoutChanges="true">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/guide_line_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/code_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/myCustomWhite"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/logo_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET YOUR PIN CODE"
+            android:textColor="@color/myCustomWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="6dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="57dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bgleft_code"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="__"
+        android:textColor="#FFF"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/tv2"
+        app:layout_constraintStart_toEndOf="@id/pin_guide_start"
+        app:layout_constraintTop_toBottomOf="@id/top_code_guide_line"
+        android:animateLayoutChanges="true" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_code_guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guide_line_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guide_line_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="57dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bgmiddle_code"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="__"
+        android:textColor="#FFF"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/tv3"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/top_code_guide_line"
+        android:animateLayoutChanges="true" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="57dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bgmiddle_code"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="__"
+        android:textColor="#FFF"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/tv4"
+        app:layout_constraintStart_toEndOf="@id/tv2"
+        app:layout_constraintTop_toBottomOf="@id/top_code_guide_line" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="57dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bgright_code"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="__"
+        android:textColor="#FFF"
+        android:textColorHint="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@id/pin_guide_end"
+        app:layout_constraintStart_toEndOf="@id/tv3"
+        app:layout_constraintTop_toBottomOf="@id/top_code_guide_line"
+        android:animateLayoutChanges="true" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pin_guide_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/pin_guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num2"
+        app:layout_constraintStart_toEndOf="@id/start_guide_line_code"
+        app:layout_constraintTop_toBottomOf="@id/numbers_guide" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/numbers_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="2"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num3"
+        app:layout_constraintStart_toEndOf="@id/num1"
+        app:layout_constraintTop_toBottomOf="@id/numbers_guide" />
+
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/end_guide_line_code"
+        app:layout_constraintStart_toEndOf="@id/num2"
+        app:layout_constraintTop_toBottomOf="@id/numbers_guide" />
+
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num5"
+        app:layout_constraintStart_toEndOf="@id/start_guide_line_code"
+        app:layout_constraintTop_toBottomOf="@id/num1" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="5"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num6"
+        app:layout_constraintStart_toEndOf="@id/num4"
+        app:layout_constraintTop_toBottomOf="@id/num2" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/end_guide_line_code"
+        app:layout_constraintStart_toEndOf="@id/num5"
+        app:layout_constraintTop_toBottomOf="@id/num3" />
+
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="7"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num8"
+        app:layout_constraintStart_toEndOf="@id/start_guide_line_code"
+        app:layout_constraintTop_toBottomOf="@id/num4" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="8"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num9"
+        app:layout_constraintStart_toEndOf="@id/num7"
+        app:layout_constraintTop_toBottomOf="@id/num5" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/end_guide_line_code"
+        app:layout_constraintStart_toEndOf="@id/num8"
+        app:layout_constraintTop_toBottomOf="@id/num6" />
+
+
+    <Button
+        android:id="@+id/num10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="@string/return_code_icon"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num11"
+        app:layout_constraintStart_toEndOf="@id/start_guide_line_code"
+        app:layout_constraintTop_toBottomOf="@id/num7" />
+
+    <Button
+        android:id="@+id/num11"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toStartOf="@id/num12"
+        app:layout_constraintStart_toEndOf="@id/num10"
+        app:layout_constraintTop_toBottomOf="@id/num8" />
+
+
+    <Button
+        android:id="@+id/num12"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pin_button_bg"
+        android:gravity="center"
+        android:text="x"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/end_guide_line_code"
+        app:layout_constraintStart_toEndOf="@id/num11"
+        app:layout_constraintTop_toBottomOf="@id/num9" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+
+    <LinearLayout
+        android:id="@+id/confirm_code_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/pin_guide_end"
+        app:layout_constraintTop_toBottomOf="@id/guideline_forgotpass"
+        android:gravity="center"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:onClick="goToNextActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textStyle="bold"
+            android:textColor="@color/myCustomWhite"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_next"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
